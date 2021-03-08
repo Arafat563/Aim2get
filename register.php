@@ -30,7 +30,7 @@
                           <!-- MENU LINKS -->
                           <div class="collapse navbar-collapse">
                                <ul class="nav navbar-nav navbar-nav-first">
-                                    <li><a href="homepage.html" class="smoothScroll">Home</a></li>
+                                    <li><a href="index.php" class="smoothScroll">Home</a></li>
                                     <li><a href="#about" class="smoothScroll">About</a></li>
                                     <li><a href="#courses" class="smoothScroll">Events</a></li>
                                     <li><a href="login.html" class="smoothScroll">Login</a></li>
@@ -45,7 +45,7 @@
               </section>
 
               <section>
-               <form method="post" action="register.php">
+               <form method="post" action="register.html">
                     <!-- <//?php include('errors.php'); ?> -->
                     <div class="input-group">
                       <label>Username</label>

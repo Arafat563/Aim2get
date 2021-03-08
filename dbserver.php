@@ -14,7 +14,7 @@
 
 		mysqli_query($db, "INSERT INTO info (name, address) VALUES ('$name', '$address')"); 
 		$_SESSION['message'] = "Address saved"; 
-		header('location: index.php');
+		header('location: home.php');
 	}
 
 
@@ -25,14 +25,14 @@
 
 		mysqli_query($db, "UPDATE info SET name='$name', address='$address' WHERE id=$id");
 		$_SESSION['message'] = "Address updated!"; 
-		header('location: index.php');
+		header('location: home.php');
 	}
 
 if (isset($_GET['del'])) {
 	$id = $_GET['del'];
 	mysqli_query($db, "DELETE FROM info WHERE id=$id");
 	$_SESSION['message'] = "Address deleted!"; 
-	header('location: index.php');
+	header('location: home.php');
 }
 
 

@@ -43,7 +43,7 @@ include('dbserver.php');
                           <!-- MENU LINKS -->
                           <div class="collapse navbar-collapse">
                                <ul class="nav navbar-nav navbar-nav-first">
-                                    <li><a href="homepage.html" class="smoothScroll">Home</a></li>
+                                    <li><a href="index.php" class="smoothScroll">Home</a></li>
                                     <li><a href="#about" class="smoothScroll">About</a></li>
                                     <li><a href="#courses" class="smoothScroll">Events</a></li>
                                     <li><a href="login.html" class="smoothScroll">Login</a></li>
@@ -70,6 +70,7 @@ include('dbserver.php');
 			<table>
 				<thead>
 					<tr>
+						
 						<th>Name</th>
 						<th>Address</th>
 						<th colspan="2">Action</th>
@@ -81,7 +82,7 @@ include('dbserver.php');
 						<td><?php echo $row['name']; ?></td>
 						<td><?php echo $row['address']; ?></td>
 						<td>
-							<a href="index.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
+							<a href="home.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
 						</td>
 						<td>
 							<a href="server.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
@@ -90,8 +91,8 @@ include('dbserver.php');
 				<?php } ?>
 			</table>
 
-			<form method="post" action="server.php" >
-
+			<form method="post" action="dbserver.php" >
+			Wennochat Attendees
 				<input type="hidden" name="id" value="<?php echo $id; ?>">
 
 				<div class="input-group">
